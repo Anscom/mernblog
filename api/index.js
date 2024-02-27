@@ -30,10 +30,6 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
-app.get('/', (req, res) => {
-    res.send('Welcome to my API');
-})
-
 app.use('/api/user', userRoutes);
 app.use('/api/auth', authRoute);
 app.use('/api/post', postRoutes);
